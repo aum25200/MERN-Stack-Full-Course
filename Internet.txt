@@ -1,0 +1,26 @@
+Internet: Interconnected network of computers.
+Server: A Computer which is 24 x 7 online and sends the Requested data to the user is called as Server.
+Example: Searching anything on Google search Engine is example of requesting something from Google server.
+
+
+Example: Searching anything on Google search Engine
+
+IP Address: Unique Addres for every System with the Help of Ipaddress every device is trackable on Internet.
+Client: One who Request for Data.
+Eg: IP address of Google : 172.217.23.238 which redirect us to the Website of Google ADDRESS OF WEBSITE.
+
+Client -----> ISP ------> DNS
+
+
+Client: (One who requests data) it will go to ISP(Internet Service Provider):One who provides Internet Service Example: JIO,AIRTEL,etc DNS(Domain Name System):Dictionary of all Domains contains all websites Domain send to ISP and ISP send it to CLIENT.
+Client will request for IP address to ISP and ISP will request to DNS.
+1st IP ADDRESS will be founded and then Domain Name
+
+Request-Response Cycle
+Example: Searching amazon.in in Google Search Engine .
+Step 1 : Open Google Chrome
+Step 2 : Type Address of amazon.in in Google search Engine.
+Step 3 : Request will go to Amazon server
+Step 4 : Response will be in the form on (HTML,CSS,JAVASCRIPT) Webpage
+
+Stack - Technology
