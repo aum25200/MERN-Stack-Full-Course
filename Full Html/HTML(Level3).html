@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML(Level3)</title>
+</head>
+<body>
+    <table border="Black">
+        <caption>This is Table 
+        </caption>
+        <!--3 different tags in html tr- represent rows, td - display data, th-represent header-->
+
+        <tr>
+            <th>Item</th> <!--Header-->
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Frooti</td> <!--Data-->
+            <td>Rs 100/-</td>
+        </tr>
+        <tr>
+            <td>7 Up</td> <!--Data-->
+            <td>Rs 100/-</td>
+
+        </tr>
+        <tr>
+            <td>Mirinda</td> <!--Data-->
+            <td>Rs 100/-</td>
+        </tr>
+    </table>
+    <h1>Semantics In HTML</h1>
+    <table border="Black">
+        <caption>This is Table 
+        </caption>
+        <!--3 different tags in html tr- represent rows, td - display data, th-represent header-->
+        <thead><!--Table Header-->
+        <tr>
+            <th>Item</th> <!--Header-->
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Frooti</td> <!--Data-->
+            <td>Rs 100/-</td>
+        </tr>
+        <tr>
+            <td>7 Up</td> <!--Data-->
+            <td>Rs 100/-</td>
+
+        </tr>
+        <tr>
+            <td>Mirinda</td> <!--Data-->
+            <td>Rs 100/-</td>
+        </tr>
+    </tbody>
+    <tfooter>
+
+    </tfooter>
+        
+    </table>
+    <h1>Colspan and Rowspan Attributes</h1>
+    <caption>Food Menu</caption>
+    <table border="Black">
+    <thead>
+        <tr>
+            <th rowspan="2">Item</th> <!--Item is occupying 2 Rows so value = 2-->
+            <th colspan="2">Price</th> <!--Price is occupying 2 columns so value = 2-->
+        </tr>
+        <tr>
+           <th>INR</th>
+           <th>USD</th>
+        </tr>
+    </thead>
+        <tbody>
+        <tr>
+            <td>FROOTI</td>
+            <td>Rs 10</td>
+            <td>$0.14</td>
+        </tr>
+        <tr>
+            <td>7-Up</td>
+            <td>Rs 10</td>
+            <td>$0.14</td>
+        </tr>
+        <tr>
+            <td>Mirinda</td>
+            <td>Rs 10</td>
+            <td>$0.14</td>
+        </tr>
+        </tbody>
+        
+        
+    </table>
+    <h1>Practice Question</h1>
+    <table border="black">
+        <caption>A test table with merged cells</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                
+                <th rowspan="2">Red Eyes</th>
+                
+            </tr>
+            <tr>
+                <th>Height</th>
+                <th>Weight</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <h1>Forms in HTML</h1>
+    <form action="/action.php"></form> <!--action attribute tells where to send the data or what actions needs to be performed when a form is submitted-->
+    <h1>Input Types in HTML</h1>
+    Text<input type ="text"><br>
+    Password<input type ="password"><br>
+    Number<input type ="number"><br>
+    Color<input type ="color"><br>
+    Time<input type ="time"><br>
+
+    <h1>Placeholders in HTML</h1>
+    Name: <input type="text" placeholder="Enter your Name">
+
+    <h1>Labels in HTML</h1><!--represents a caption for an item-->
+    <label>
+      Name: <input type="text" placeholder="Enter your Name">
+    </label>
+    <!--Classical Approach for Label-->
+    <label for="username">Enter your username:</label>
+    <input type="text" placeholder="Enter your Name" id="username">
+    <h1>Buttons in HTML</h1>
+    <button>SUBMIT</button><!--default behaviour of button is submit only inside form tag-->
+    <button type="submit">Submit</button><!--Submits Information-->
+    <button type="reset">Reset</button>
+    <button type="Button">Button</button>
+    <h1>Name Attribute in HTML</h1>
+    <input type ="text" placeholder="Enter your Username" id="username" name="username"><!--It displays what submitted in username textbox in search bar .use to access from Backend,name=value pair-->
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="Search in Youtube" name="search_query">
+        <button>Search</button>
+    </form>
+    <h1>Practice Question(Create a search bar for Google)</h1>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="Enter to Search" name="q">
+        <button>Search</button>
+    </form>
+    <h1>Checkbox</h1>
+    <form action="/server">
+        <input type="checkbox" id="age" name="age"> <!--IF PASS THE INFORMATION IN CHECKBOX WITHOUT link its shows on only if its ticked-->
+        <label for="age">Iam 18+</label>
+        <button>Submit</button>
+    </form>
+    <h1>Radio Button</h1>
+    <form action="/server">
+        <input type="radio" id="fruits" name="fruits" value="Apple"> <!--It is use to choose one Single option from Multiple options like MCQ-->
+        <label for="fruits">Apple</label><br>
+        <input type="radio" id="fruits" name="fruits" value="Banana">
+        <label for="fruits">Banana</label><br>
+        <input type="radio" id="fruits" name="fruits" value="Orange">
+        <label for="fruits">Orange</label><br>
+        <button>Submit</button>
+    </form>
+     <h1>Dropdown</h1>
+    <form action="/server">
+        <select name="profession" id="profession">
+            <option value="Student">Student</option>
+            <option value ="Teacher">Teacher</option>
+            <option value ="Engineer">Engineer</option>
+        </select>
+        
+        <button>Submit</button>
+    </form>
+     <h1>Range </h1>
+    <form action="/server">
+        <label for="volume">Volume</label>
+        <input type="range" min="0" max="100" name="vol">
+        <button>Submit</button>
+    </form>
+     <h1>TextArea</h1>
+    <form action="/server">
+        <label for="feedback">Please provide your valuable Feedback.</label><br>
+        <textarea id="feedback" placeholder="Write your Feedback Here"></textarea>
+        <button>Submit</button>
+    </form>
+     <h1>Practice Question 9 </h1>
+     <h3>Registration Form</h3>
+    <form action="/server">
+        <div>
+        <input type="text" id="fname" placeholder="First Name">
+        <input type="text" id="lname" placeholder="Last Name">
+        </div>
+        <label for="gender">Please Select your Gender </label>
+        <select name="gender" id="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+        <div>
+            Do you agree our Terms and Conditions ?<br>
+            <input type="checkbox" id="tos_agree" name="tos_agree">
+            <label for="tos_agree">Yes ! I agree.</label>
+            <button>Submit</button>
+        </div>
+        
+
+    </form>
+    <h1>Assignments </h1>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+</head>
+<body>
+
+<table border="1">
+    <caption>Student Information</caption>
+
+    <tr>
+        <th rowspan="6">Info</th>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Address</th>
+    </tr>
+
+    <tr>
+        <th>City</th>
+        <th>House</th>
+    </tr>
+
+    <tr>
+        <td>A</td>
+        <td>Delhi</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>B</td>
+        <td>Mumbai</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>C</td>
+        <td>Kolkata</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>D</td>
+        <td>Pune</td>
+        <td>4</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+
+<form>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <br><br>
+
+    <label>Sex:</label>
+
+    <input type="radio" id="male" name="sex" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="sex" value="female">
+    <label for="female">Female</label>
+
+    <br><br>
+
+    <label for="country">Country:</label>
+
+    <select id="country" name="country">
+        <option>Select an option</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="nepal">Nepal</option>
+        <option value="canada">Canada</option>
+    </select>
+
+    <br><br>
+
+    <label for="message">Message:</label>
+
+    <br>
+
+    <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+    <br><br>
+
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">Subscribe?</label>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+
+<h2>Feedback Form</h2>
+
+<form action="/contact">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Write your name">
+
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Write your email">
+
+    <br><br>
+
+    <label for="message">Message:</label>
+
+    <br>
+
+    <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+    <br><br>
+
+    <label>Rate us out of 5:</label>
+
+    <br>
+
+    <input type="radio" id="one" name="rating" value="1">
+    <label for="one">1</label><br>
+
+    <input type="radio" id="two" name="rating" value="2">
+    <label for="two">2</label><br>
+
+    <input type="radio" id="three" name="rating" value="3">
+    <label for="three">3</label><br>
+
+    <input type="radio" id="four" name="rating" value="4">
+    <label for="four">4</label><br>
+
+    <input type="radio" id="five" name="rating" value="5">
+    <label for="five">5</label>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
+    
+    
+</body>
+</html>
