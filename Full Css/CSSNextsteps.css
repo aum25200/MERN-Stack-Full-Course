@@ -1,0 +1,39 @@
+body{
+    background-image: url("css_background.jpg");/*background-image property is used to set background image using css.*/
+    background-size:contain ;/*contain-it is set full-size according to div,cover-image is set as cover ,auto-stretches the image*/
+}
+div{
+    height:200px;
+    width:200px;
+    background-color: rgba(255,0,0,0.5);/*0.5 is Alpha property which sets opacity which means how much colour should be hidden and visible.*/
+    opacity: 1;/*opacity set*/
+    transition: 1s;/*Transition is the time taken after clicking to change to its desired state*/
+    transition-delay: 1s;/*Transition delay is the time taken to change to its original state*/
+    margin-top: 10px;
+    margin: 0 auto; /*trick to bring element into center*/
+    transition: margin-top 2s ease-in 0.2s;
+    
+}
+div:hover{
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin-top: 400px;
+}
+section{
+    margin-top: 100px;
+}
+#one{
+    transform:rotate(45deg);/*transform-rotate property is used to rotate div 45 degreees*/
+}
+#two{
+    transform:scale(0.5,0.5); /*transform-scale property is used to scale(x,y)*/
+}
+#three{
+    transform:translate(100px,100px);/*transform-translate property is used to move along x and y axis*/
+}
+#four{
+    transform:skew(20deg);/*transform skew property is used to make div element slant based on deg.*/
+}
+#five{
+    box-shadow:2px 2px 8px darkgreen;/*box-shadow property adds shadow effect around element frame*/
+}

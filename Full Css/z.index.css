@@ -1,0 +1,17 @@
+.box{
+    height:150px;
+    width: 150px;
+    background-color:pink ;
+    border: 2px solid black;
+
+}
+.one{
+    background-color: aquamarine;
+    position: relative;
+    z-index: 1;/*z-index is only applied if position is there and it must be position:relative not position:static*/
+}
+.two{
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+}

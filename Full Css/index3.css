@@ -1,0 +1,36 @@
+div{
+    height: 200px;
+    width:300px;
+    background-color: blueviolet;
+    border-width: 5px;/*It is used to apply border*/
+    border-style:double;
+    border-color:darkblue;
+    border-left-color: lightblue;/*Border Sides:used to control and individual box*/
+/*left,right,top,bottom*/
+    border-right-color:aqua;
+    border-top-color:darkkhaki;
+    border-radius: 15px;/*border radius used to round the edges */
+    border-top-right-radius:15px;
+    padding-top:15px;/* padding is used to set the space between content and outer layer*/
+    padding-left:15px;
+    
+    padding-bottom: 15px;
+    margin-bottom:25px; /*Ma rginis used to set spacing on  outside of the border*/
+    margin-left:25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    /*display:inline;*/  /*display property consists of block and inline.Block property acquires full Block.Inline acquires only space which is required*/
+}
+h1{
+    border-width: 15px;/*Border is used to apply border*/
+    border-style:dashed;
+    border-color:darkblue;
+    border:15px dashed darkblue; /*Border-Shorthand*/
+}
+#btn{
+    border: 2px solid black;
+    border-radius:15px; /*border radius makes the button rounded*/
+    padding-left:25px;
+    padding-right:25px;
+    background-color: lightskyblue;
+}

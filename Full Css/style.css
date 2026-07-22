@@ -1,0 +1,37 @@
+h1{
+    color:Orange;
+    background-color: darkmagenta; 
+    text-align: center; /*text-align property center,right,left,justify*/
+    font-weight: bold; /*font-weight property normal(400),bold(700),100,bolder,lighter */
+    text-decoration:greenyellow underline; /*it is used to set the appearance of decorative lines on text like underline. Underline,overline,line-through*/
+    line-height: 2.5;/*controls the height of the line of text.normal,2.5*/
+    letter-spacing: 10px;/*control the horizontal spacing behaviour between characters*/    
+    font-size:40px;   /*1 inch = 96 pixels*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/*Describes type of font*/
+}
+
+h2{
+    color:lightblue;
+    background-color:blue;
+}
+h3{
+    color:green;
+    background-color:lightgreen;
+}
+p{
+    color:white;/*color property*/
+    background-color:black;/*background property*/
+}
+button{
+    background-color: blue;
+    color:white;
+}
+h4{
+    color:orange;
+}
+h5{
+    color:rgb(63, 63, 59);/*rgb property(255,255,255)*/
+}
+h6{
+    color:#ffa511; /*Hex code*/
+}

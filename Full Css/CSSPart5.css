@@ -1,0 +1,27 @@
+#container{
+    height:500px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border:2px solid black;
+    display:flex;/*flexbox property is used to arrange items in rows or columns.Used in Responsive Websites arranges all in rows*/
+    /*flex-direction:column;/*display column wise.flex-direction:rows-display row-wise also row-reverse,column-reverse*/
+    flex-direction: row;
+    justify-content: flex-start;/*all contents will go to start*/
+    justify-content: space-between;/*used to show space between elements*/
+    flex-wrap:wrap;/*sets whether flex items are forced onto one line or wrap into multiple lines.wrap-reverse reverses the elements*/
+    align-content:flex-start;/*sets the distribution of space between and around content items along a flexbox cross-axis*/
+}
+h1{
+    text-align:center;
+}
+#org{
+    align-self:center;/*align an item along the cross-axis flex-start,flex-end,center,baseline*/
+}
+#container div{
+    height:100px;
+    width:300px;
+    color:whitesmoke;
+    text-align:center;
+    font-size:1.5em;
+}

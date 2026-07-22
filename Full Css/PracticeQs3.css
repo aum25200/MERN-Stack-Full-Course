@@ -1,0 +1,25 @@
+#outerdiv{
+    height:200px;
+    width:70px;
+    border:2px solid black;
+
+}
+.inner{
+    height:50px;
+    width:50px;
+    border:2px solid black;
+    margin:10px;
+    border-radius:50px;
+}
+#red{
+    color:red;/*Note: color is used only for text and background-color is used for full shape*/
+    background-color: red;
+}
+#yellow{
+    color:yellow;
+    background-color: yellow;
+}
+#green{
+    color:greenyellow;
+    background-color: greenyellow;
+}

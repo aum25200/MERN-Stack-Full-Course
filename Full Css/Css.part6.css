@@ -1,0 +1,27 @@
+.container{
+    width: 600px;
+    height:300px;
+    background-color: black;
+    display:flex;/*items in rows*/
+    display:grid;/*Grid view*/
+    grid-template-rows: 50px 60px 70px;/*for 4 lines*/
+    grid-template-columns: 100px 100px 100px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);/*3 equal rows are created*/
+    row-gap:10px;/*defines gaps between rows*/
+    column-gap:10px;/*defines gaps between columns*/
+    grid-gap:10px 10px;/*Equal GAP between rows and columns*/
+}
+.item{
+    width:100px;
+    height:100px ;
+    background-color: greenyellow;
+    border:2px solid black;
+    text-align: center;
+    
+
+}
+.item6{
+    grid-row-start:1;
+    grid-row-end: 3;/*defines an items starting and ending position*/
+}

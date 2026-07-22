@@ -1,0 +1,81 @@
+h3{
+    background-color: antiquewhite !important;
+}
+*{ /*Universal Selector:It is used to apply CSS to whole page*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{ /*Element Selector: Select Elements of Same Type*/
+    color:#b92b27;
+}
+
+#login{ /*Id Selector: It is used to select an element based on id attributes,It is case-sensitive.It is used to apply css to particular unique element.*/
+    background-color: #b92b27;
+    color:white;
+}
+
+#signup{ /*Id Selector*/
+    background-color: #b92b27;
+    color:white;
+}
+
+.upvote {/*Class Selector: It is used to select and element based on their class attribute.It is used to apply css to multiple elements.*/
+    background-color: blue;
+    color:white;
+}
+
+/*descendant selector: It is used to apply css to descendents.*/
+
+p a{/*anchor tag inside paragraph tag is descendant of paragraph*/
+    color:purple;
+    background-color: greenyellow;
+}
+/*Adjacent Sibling Combinator: It applies CSS to adjacent elements.Eg: H3 immediately comes after paragraph*/
+p + h3{
+    text-decoration: underline;
+}
+/*Child combinator:It applies css to child.Eg: Inside div there is paragraph element*/
+div > input{
+    background-color: lightgray;
+}
+/*Attribute Selector:It is used to select elements based on the presence or value of a given attribute.*/
+input[type="text"]{
+    color:red;
+}
+input[type="password"]{
+    color:aquamarine;
+}
+#para{
+    color:orange;
+}
+/*Pseudoclass: A keyword added to a selector that specifies the special state of the selected elements*/
+/*hover,active,checked,nth-of-type*/
+button:hover{
+    background-color: black;
+    color:white;
+}
+h3:hover{
+    text-decoration: none;
+}
+button:active{
+    background-color: pink;/*clicking on it it turns pink*/
+}
+input[type="radio"]:checked + label/*Sibling: Because Similiar Pattern*/{
+    color:red;
+    font-weight:bold;
+}
+.post:nth-of-type(2){
+    background-color: blue;
+}
+/*PseudoElements: A Keyword added to a selector that lets you style a specific part of the selected elements*/
+/*first-letter,first-line,selection*/
+h1::first-letter{
+    color:blueviolet;
+}
+#pseudoelement::first-line{
+    color:#b92b27;
+
+}
+#pseudoelement::selection{ /*Selection:Selected text colour changes.*/
+    color:darkred;
+}
